@@ -13,5 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v4     
     - name: Build the Docker image
-      run: docker build . --file Dockerfile.dev -t jyotiprasad5/docker-react
-      run: npm test
+    - run: docker build . --file Dockerfile.dev -t jyotiprasad5/docker-react
+    - run: docker run jyotiprasad5/docker-react npm test
