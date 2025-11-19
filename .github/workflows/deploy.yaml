@@ -12,4 +12,4 @@ jobs:
       - name: Build the Docker image
       - run: docker build . --file Dockerfile.dev -t jyotiprasad5/docker-react
       - name: run the test
-      - run: docker run jyotiprasad5/docker-react npm test
+      - run: npm test
