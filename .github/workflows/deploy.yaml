@@ -17,6 +17,6 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile.dev -t jyotiprasad5/docker-react
       - name: push the docker image
-        run: docker push jyotivanee/custome
+        run: docker push jyotiprasad5/docker-react
       - name: run the tests
         run: npm test
