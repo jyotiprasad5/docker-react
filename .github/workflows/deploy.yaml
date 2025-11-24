@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest			
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: docker login
@@ -17,6 +17,6 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile.dev -t jyotiprasad5/docker-react
       - name: push the docker image
-        run: docker push jyotivanee/custome:tagname
+        run: docker push jyotivanee/custome
       - name: run the tests
         run: npm test
