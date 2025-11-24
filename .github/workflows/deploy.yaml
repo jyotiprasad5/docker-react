@@ -16,7 +16,7 @@ jobs:
           password: Redhat_123
       - name: Build the Docker image
         run: docker build . --file Dockerfile.dev -t jyotivanee/custome
-      - name: push the docker image
-        run: docker push jyotivanee/custome
       - name: run the tests
         run: npm test
+      - name: push the docker image
+        run: docker push jyotivanee/custome
